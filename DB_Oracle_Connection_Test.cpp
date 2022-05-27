@@ -36,19 +36,17 @@ int main(void) {
 	Connection* conn = nullptr;
 
 	string str;
-	string usr = "dbs211_213g14";
-	string pass = "44691836";
-	string srv = "myoracle12c.senecacollege.ca:1521/oracle12c";	
+	string usr = "usrID";
+	string pass = "usrPW";
+	string srv = "oracleServer";	
 
 	try {
 		env = Environment::createEnvironment(Environment::DEFAULT);
 		conn = env->createConnection(usr, pass, srv);
 		cout << "Connection is Successful!" << endl;
-		cout << "DBS211 Project Group6" << endl;
-		cout << "Jinny Yun, Michael Seo, Yejin Kim" << endl;
 		cout << "------------------------------------------" << endl << endl;
 
-		cout << "Milestone1: Employees table" << endl;
+		cout << "Employees table" << endl;
 
 		cout << "Enter the employee number (####): ";
 		int selected = selectEmpNum();
